@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f0db72;
+    text-align: center;
+}
+
+
+h1 {
+  margin-top: 4vmin;
+  margin-bottom: 1vmin;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  border: 2px white double;
+  border-radius: 1rem;
+  color: #333533;
+  display: inline-block; 
+}
+
+/* Game Title Style */
+.gameTitle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #333533;
+}
+
+/* Name Style */
+.myName {
+  font-family: 'Playfair Display', 'Segoe UI', serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(255, 0, 0);
+}
+
+.container{
+    height: 70vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: -1.6vmin;
+    margin-bottom: -1.6vmin;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    font-size: 8vmin;
+    /* color: rgb(189, 47, 255); */
+    background-color: white;
+    /* box-shadow: 0 0 1vmin #333533; */
+    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); */
+}
+
+.box:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    transform: scale(0.97);
+    transition: all 0.3s ease-in;
+}
+
+.box:active{
+    box-shadow: 0 0 16px 4px rgba(153, 66, 194, 0.53) inset;
+    transition: all 0.1s ease-in;
+}
+
+.new-btn {
+    margin-top: 2vmin;
+    margin-right: 1vmin;
+    margin-bottom: -1.7vmin;
+    padding: 1vmin 2vmin;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(47, 241, 255);
+    color: white;
+    font-size: 4vmin;
+    transition: all 0.3s ease-in;
+}
+
+.new-btn:hover {
+    cursor: pointer;
+    background-color: rgb(38, 154, 204);
+}
+
+.new-btn:active {
+    transform: scale(0.7) ;
+    transition: transform 0.1s;
+}
+
+#resetButton {
+    margin-top: -1.7vmin;
+    margin-left: 1vmin;
+    padding: 1vmin 2vmin;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(189, 47, 255);
+    color: white;
+    font-size: 4vmin;
+    transition: all 0.3s ease-in;
+}
+
+#resetButton:hover {
+    cursor: pointer;
+    background-color: rgb(118, 27, 157);
+}
+
+#resetButton:active {
+    transform: scale(0.7);
+    transition: transform 0.1s;
+}
+
+.msgContainer{
+    padding: 0.5vmin;
+    margin-top: -0.3vmin;
+    margin-bottom: -0.6vmin;
+}
+
+.hide{
+    display: none;
+}
+
+#msg{
+    font-size: 7vmin;
+    font-weight: 900;
+    color: rgb(15, 177, 0);
+    margin-bottom: -1.7vmin
+}
