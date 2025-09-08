@@ -51,7 +51,8 @@ boxes.forEach((box) =>{
 })
 
 let gameDraw = () => {
-    msg.innerText = `Game Is Draw`;
+    msg.innerText = `Game Is Draw `;
+    msg.style.color = "black";
     msgContainer.classList.remove("hide");
     boxes.forEach((box) => {
         box.disabled = true;  // Disable boxes on draw
@@ -60,6 +61,7 @@ let gameDraw = () => {
 
 const showWinner = (winner) => {
     msg.innerText = `Congratulations Winner is ${winner}`;
+    msg.style.color = "Green";
     msgContainer.classList.remove("hide");
 
     boxes.forEach((box) => {
